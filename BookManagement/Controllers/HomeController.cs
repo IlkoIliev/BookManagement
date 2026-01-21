@@ -1,6 +1,6 @@
-using System.Diagnostics;
 using BookManagement.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace BookManagement.Controllers
 {
@@ -15,7 +15,7 @@ namespace BookManagement.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Books");
         }
 
         public IActionResult Privacy()

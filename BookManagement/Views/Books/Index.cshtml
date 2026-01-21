@@ -27,10 +27,15 @@ else
             {
                 <tr>
                     <td>@b.Id</td>
-                    <td>@b.Author</td>
-                    <td>@b.Author</td>
+                    <td>@b.Title</td>
+                    <td>@b.Author</td>    
                     <td>@b.Genre</td>
                     <td>@b.Year</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@b.Id">Прегледай</a> |
+                        <a asp-action="Edit" asp-route-id="@b.Id">Редактирай</a> |
+                        <a asp-action="Delete" asp-route-id="@b.Id">Изтрий</a>
+                    </td>
                 </tr>
             }
         </tbody>
